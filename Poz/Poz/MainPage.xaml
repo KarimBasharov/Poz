@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Poz.MainPage"
+             BackgroundColor="LightCyan">
+
+    <StackLayout>
+        <!--<Image Source="nyan.gif" IsAnimationPlaying="True" HorizontalOptions="Center" VerticalOptions="Start"></Image>-->
+        <Picker x:Name="friend" Title="Выбрать друга..." VerticalOptions="EndAndExpand" Margin="20" BackgroundColor="LightBlue" HorizontalOptions="StartAndExpand"/>
+        <Label x:Name="num" Text="" HorizontalOptions="Center" />
+        <Label x:Name="maill" Text="" HorizontalOptions="Center"/>
+        <Button x:Name="congr" Text="Поздравить!" VerticalOptions="End" Padding="10" BackgroundColor="LightGreen" Margin="15" CornerRadius="90"/>
+        <Switch x:Name="type" IsToggled="False" HorizontalOptions="Center" VerticalOptions="End" Toggled="type_Toggled" />
+        <Label x:Name="state" Text="СМС" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="LightBlue" FontSize="Large"/>
+    </StackLayout>
+
+</ContentPage>
